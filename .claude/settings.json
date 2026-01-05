@@ -1,0 +1,48 @@
+{
+	"env": {
+		"NODE_ENV": "development",
+		"N8N_REINSTALL_MISSING_PACKAGES": "true"
+	},
+
+	"permissions": {
+		"allow": [
+			"Bash(npm install:*)",
+			"Bash(npm run:*)",
+			"Bash(npm build:*)",
+			"Bash(npm test:*)",
+			"Bash(npm publish:*)",
+			"Bash(npm create:*)",
+			"Bash(npx:*)",
+			"Bash(node:*)",
+			"Bash(git status:*)",
+			"Bash(git diff:*)",
+			"Bash(git log:*)",
+			"Bash(git add:*)",
+			"Bash(git commit:*)",
+			"Bash(ls:*)",
+			"Bash(pwd:*)",
+			"Read(**/*.ts)",
+			"Read(**/*.json)",
+			"Read(**/*.md)",
+			"Write(**/*.ts)",
+			"Write(**/*.json)",
+			"Write(**/*.md)",
+			"Edit(**/*.ts)",
+			"Edit(**/*.json)",
+			"Edit(**/*.md)"
+		],
+		"deny": [
+			"Bash(cat:*)",
+			"Bash(grep:*)",
+			"Bash(find:*)",
+			"Read(./.env)",
+			"Read(./.env.*)",
+			"Read(./secrets/**)",
+			"Read(node_modules/**)",
+			"Read(dist/**)",
+			"Write(./.env)",
+			"Write(./secrets/**)"
+		],
+		"defaultMode": "acceptEdits"
+	}
+}
