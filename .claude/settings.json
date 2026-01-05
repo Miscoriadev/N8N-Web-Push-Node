@@ -29,7 +29,12 @@
 			"Write(**/*.md)",
 			"Edit(**/*.ts)",
 			"Edit(**/*.json)",
-			"Edit(**/*.md)"
+			"Edit(**/*.md)",
+			"WebFetch(domain:*)",
+			"Grep(*)",
+			"Glob(*)",
+			"Task(*)",
+			"TodoWrite(*)"
 		],
 		"deny": [
 			"Bash(cat:*)",
