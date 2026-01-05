@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-web-push",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "N8N community node for sending Web Push notifications",
 	"license": "MIT",
 	"homepage": "https://github.com/Miscoriadev/N8N-Web-Push-Node",
