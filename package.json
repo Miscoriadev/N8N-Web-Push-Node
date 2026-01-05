@@ -1,55 +1,54 @@
 {
-    "name": "n8n-nodes-web-push",
-    "version": "0.1.0",
-    "description": "n8n community node for sending Web Push notifications",
-    "license": "MIT",
-    "homepage": "",
-    "keywords": [
-        "n8n-community-node-package"
-    ],
-    "author": {
-        "name": "Praevalens",
-        "email": "10863613+Praevalens@users.noreply.github.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Praevalens/n8n-nodes-web-push.git"
-    },
-    "scripts": {
-        "build": "n8n-node build",
-        "build:watch": "tsc --watch",
-        "dev": "n8n-node dev",
-        "lint": "n8n-node lint",
-        "lint:fix": "n8n-node lint --fix",
-        "release": "n8n-node release",
-        "prepublishOnly": "n8n-node prerelease"
-    },
-    "files": [
-        "dist"
-    ],
-    "n8n": {
-        "n8nNodesApiVersion": 1,
-        "strict": false,
-        "credentials": [
-            "dist/credentials/VapidApi.credentials.js"
-        ],
-        "nodes": [
-            "dist/nodes/Example/Example.node.js",
-            "dist/nodes/WebPush/WebPush.node.js"
-        ]
-    },
-    "devDependencies": {
-        "@n8n/node-cli": "*",
-        "@types/web-push": "^3.6.4",
-        "eslint": "9.32.0",
-        "prettier": "3.6.2",
-        "release-it": "^19.0.4",
-        "typescript": "5.9.2"
-    },
-    "peerDependencies": {
-        "n8n-workflow": "*"
-    },
-    "dependencies": {
-        "web-push": "^3.6.7"
-    }
+	"name": "n8n-nodes-web-push",
+	"version": "0.1.0",
+	"description": "N8N community node for sending Web Push notifications",
+	"license": "MIT",
+	"homepage": "",
+	"keywords": [
+		"n8n-community-node-package"
+	],
+	"author": {
+		"name": "Milan van Dijck",
+		"email": "npm@miscoriadev.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Miscoriadev/N8N-Web-Push-Node.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": false,
+		"credentials": [
+			"dist/credentials/VapidApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/WebPush/WebPush.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"@types/web-push": "^3.6.4",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"dependencies": {
+		"web-push": "^3.6.7"
+	}
 }
