@@ -1,15 +1,12 @@
-import type {
-	ICredentialTestRequest,
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+import type { ICredentialTestRequest, ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class VapidApi implements ICredentialType {
 	name = 'vapidApi';
 
 	displayName = 'VAPID API';
 
-	documentationUrl = 'https://github.com/Praevalens/n8n-web-push-node?tab=readme-ov-file#credentials';
+	documentationUrl =
+		'https://github.com/Miscoriadev/N8N-Web-Push-Node?tab=readme-ov-file#credentials';
 
 	icon = 'file:vapid.svg' as const;
 
@@ -54,7 +51,8 @@ export class VapidApi implements ICredentialType {
 			typeOptions: { password: true },
 			required: false,
 			default: '',
-			description: 'Optional Google Cloud Messaging API key for backward compatibility with older Chrome versions',
+			description:
+				'Optional Google Cloud Messaging API key for backward compatibility with older Chrome versions',
 		},
 	];
 }
